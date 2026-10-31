@@ -154,6 +154,9 @@
   #continue{color:var(--accent);border-color:var(--accent-line);}
   #continue[hidden]{display:none;}
   #btn-analytics[hidden]{display:none;}
+  /* a built-in page's deck as text, for search engines and AI tools that don't run JavaScript: out of sight
+     until the app removes it (without JavaScript, the page's <noscript> shows it) */
+  .deck-text{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
   /* links in a dialog's notes (the privacy page, say) in the accent, readable in dark and light */
   .modal .note a{color:var(--accent);text-decoration:underline;text-underline-offset:2px;}
   .modal ul.templates{list-style:none;padding:0;display:grid;gap:8px;margin:12px 0;}
@@ -623,7 +626,7 @@
   }
   #brand[hidden]{display:none;}
   /* embedded in a site page: one read-only deck, so no editor, links or copies */
-  html.embed #btn-edit-toggle, html.embed #continue, html.embed #editor-pane, html.embed #editor-resizer{display:none !important;}
+  html.embed #btn-edit-toggle, html.embed #continue, html.embed #editor-pane, html.embed #editor-resizer, html.embed #help tr.edit{display:none !important;}
   html.embed .brand .trail{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:600;font-size:15px;min-width:0;}
   html.embed .brand .trail a{color:var(--text);text-decoration:none;white-space:nowrap;}
   /* the header wears the site's colours, so an accent-coloured link can vanish into it (gold on gold):

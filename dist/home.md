@@ -1,5 +1,6 @@
 ---
 title: Slidetake — write in markdown with AI, record without timeline editing
+description: "Write a deck in markdown, with AI, present it on a spatial canvas, and record it slide by slide: retake any slide, pick the best take, download the video. Open source."
 brand: slidetake
 pip: bottom-right
 ---

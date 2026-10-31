@@ -1,5 +1,6 @@
 ---
 title: Slidetake Docs
+description: "How to use Slidetake, step by step: get started, write a deck, present it, record a video in the browser or with OBS, and share it."
 brand: slidetake
 pip: none
 ---
@@ -69,6 +70,18 @@ Any AI can write a deck: point it at [slidetake.com/llms.txt](/llms.txt) and say
 - **An agent** (Claude Code and the like): *"Write a Slidetake deck about X in talk/deck.md, following slidetake.com/llms.txt"*, then `npx slidetake talk/deck.md`. The deck reloads as it edits.
 - **A chat**: ask for one markdown block, then paste it into **✎ Editor** here.
 - **Images**: beside the file for an agent; full URLs in a chat.
+
+### A prompt to copy
+
+Paste this into any AI and change the first line:
+
+```text
+Write a Slidetake deck about <topic>, a 10-minute talk.
+Follow https://slidetake.com/llms.txt.
+A # title card, then 4–6 ## sections of 1–3 ### cards.
+<!-- steps --> before lists; a ```dot or ```d2 diagram
+where a picture helps. Reply with one markdown block.
+```
 
 ## 2️⃣ Write a deck
 

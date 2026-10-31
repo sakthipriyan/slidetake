@@ -42,10 +42,8 @@
 </head>
 <body>
 <noscript>
-  <h1>Slidetake</h1>
-  <p><strong>Write in markdown. Present on a spatial canvas. Record without timeline editing.</strong></p>
-  <p>For developers and technical educators who explain things on video. Your headings become a map you move through; with OBS, every slide is a take, so a fumbled line is retaken on the spot, and Slidetake writes the frame-exact cut, YouTube chapters and description.</p>
-  <p>Slidetake needs JavaScript. Read the <a href="/docs.md">docs</a>, the <a href="/llms.txt">summary</a>, or the source on <a href="https://github.com/slidetake/slidetake">GitHub</a>.</p>
+  <style>#deck-text{position:static;width:auto;height:auto;overflow:visible;clip:auto;white-space:normal;max-width:760px;margin:24px auto;padding:0 16px;}#deck-text img{max-width:100%;height:auto;}#deck-text :is(h1,h2) img{height:1em;width:auto;vertical-align:-.12em;}#deck-text table{border-collapse:collapse;}#deck-text :is(td,th){border:1px solid #3f3f46;padding:4px 8px;}#deck-text a{color:#29b685;}</style>
+  <p class="deck-text-note">Slidetake needs JavaScript to present and record decks. Here is this page as text; the source is on <a href="https://github.com/slidetake/slidetake">GitHub</a>.</p>
 </noscript>
 
 <header>
@@ -123,7 +121,7 @@
       <tr><td><kbd>1</kbd>–<kbd>4</kbd></td><td>focus, path, radial, tree</td></tr>
       <tr><td><kbd>F</kbd></td><td>fullscreen; <kbd>F</kbd> or <kbd>Esc</kbd> leaves</td></tr>
       <tr><td><kbd>+</kbd> <kbd>−</kbd></td><td>bigger / smaller slides</td></tr>
-      <tr><td><kbd>E</kbd></td><td>editor: write, open, share</td></tr>
+      <tr class="edit"><td><kbd>E</kbd></td><td>editor: write, open, share</td></tr>
       <tr><td><kbd>L</kbd></td><td>light / dark</td></tr>
       <tr class="rec"><td><kbd>C</kbd> <kbd>V</kbd> <kbd>R</kbd></td><td>camera, camera layouts, Studio (record)</td></tr>
       <tr><td><kbd>K</kbd> <kbd>?</kbd></td><td>this card; again or <kbd>Esc</kbd> closes it</td></tr>

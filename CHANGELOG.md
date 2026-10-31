@@ -12,6 +12,24 @@ package can notice. Tests, CI and tooling do not belong here.
 
 ## [Unreleased]
 
+## [0.4.3] - 2026-10-31
+
+### Added
+
+- slidetake.com's own pages (home, Features, Showcase, Docs, Privacy) carry
+  their deck as text, with their own title and description, so search engines
+  and AI tools that don't run JavaScript read the real page. Without
+  JavaScript the page shows it.
+- Docs → A prompt to copy: a short prompt that has any AI write a Slidetake
+  deck, following llms.txt.
+
+### Fixed
+
+- The no-JavaScript message no longer mentions the removed YouTube
+  description.
+- On a site's page (read-only, no editor) the keys panel no longer lists
+  **E** for the editor.
+
 ## [0.4.2] - 2026-10-31
 
 ### Fixed

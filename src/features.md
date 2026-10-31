@@ -1,5 +1,6 @@
 ---
 title: Slidetake Features
+description: "Every Slidetake feature, one line each: recording in the browser or with OBS, a map instead of a stack, the camera in the deck, plain markdown, your colours, and where it runs."
 brand: slidetake
 pip: none
 ---

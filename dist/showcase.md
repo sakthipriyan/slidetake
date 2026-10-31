@@ -1,5 +1,6 @@
 ---
 title: Slidetake Showcase
+description: "Everything a Slidetake deck can hold, working on screen: text, steps, code, Graphviz, D2, SVG, charts, image layouts, YouTube, the camera and the map."
 brand: slidetake
 duration: 10m
 ---
