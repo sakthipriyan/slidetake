@@ -23,6 +23,8 @@ import {takesOf, pickedRanges, mergedRanges, sessionFps, baseName, sectionChapte
 // Embedded in another site's page (see src/embed.js): window.SLIDETAKE = {markdown, settings, base, back,
 // themeKey}. The page shows that one deck, read-only: no editor, links or copies.
 const EMBED = window.SLIDETAKE || null;
+// a built-in page carries its deck as text for readers without JavaScript (build.mjs); the app shows the deck
+document.getElementById('deck-text')?.remove();
 // served by `npx slidetake` (bin/slidetake.mjs): {deck, file, events, save}, a deck file on this computer
 const LOCAL = window.SLIDETAKE_LOCAL || null;
 // the logo, read once from the header (which an embed replaces): the corner mark and the credit reuse it

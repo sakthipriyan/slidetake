@@ -51,6 +51,7 @@
   },
   "devDependencies": {
     "esbuild": "0.25.10",
+    "marked": "12.0.2",
     "typescript": "5.9.3",
     "wrangler": "^4.152.0"
   }
