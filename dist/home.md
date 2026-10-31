@@ -13,6 +13,82 @@ pip: bottom-right
 
 Any AI writes the deck for you: it's plain markdown. For developers and technical educators who explain things on video. You're inside a Slidetake deck right now. Press → to walk it, **O** for the map.
 
+## ✨ Write, present, record
+
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" font-family="IBM Plex Sans, system-ui, sans-serif">
+  <defs>
+    <marker id="head" viewBox="0 0 10 10" refX="8" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" style="fill:var(--accent)"/>
+    </marker>
+  </defs>
+
+  <!-- three panels -->
+  <g style="fill:var(--accent);fill-opacity:.06;stroke:var(--accent);stroke-opacity:.45" stroke-width="1.5">
+    <rect x="12" y="12" width="290" height="276" rx="20"/>
+    <rect x="335" y="12" width="290" height="276" rx="20"/>
+    <rect x="658" y="12" width="290" height="276" rx="20"/>
+  </g>
+  <g fill="none" style="stroke:var(--accent)" stroke-width="2.5" marker-end="url(#head)">
+    <path d="M304 120 H331"/><path d="M627 120 H654"/>
+  </g>
+
+  <!-- 1. write: a markdown file, and the AI writing it -->
+  <rect x="97" y="40" width="128" height="150" rx="12" style="fill:var(--node-bg);stroke:var(--accent)" stroke-width="2"/>
+  <g font-family="IBM Plex Mono, monospace" font-size="14" font-weight="600" style="fill:var(--accent)">
+    <text x="111" y="68">#</text><text x="111" y="124">##</text>
+  </g>
+  <g style="fill:var(--text-muted)" opacity=".55">
+    <rect x="127" y="58" width="66" height="10" rx="5" style="fill:currentColor"/>
+    <rect x="111" y="80" width="98" height="7" rx="3.5"/><rect x="111" y="94" width="74" height="7" rx="3.5"/>
+    <rect x="135" y="114" width="58" height="10" rx="5" style="fill:currentColor"/>
+    <rect x="111" y="136" width="98" height="7" rx="3.5"/><rect x="111" y="150" width="84" height="7" rx="3.5"/><rect x="111" y="164" width="62" height="7" rx="3.5"/>
+  </g>
+  <path d="M232 34 l6 14 14 6 -14 6 -6 14 -6 -14 -14 -6 14 -6z" style="fill:var(--accent)"/>
+
+  <!-- 2. present: cards on a path, the one on screen framed -->
+  <g fill="none" style="stroke:var(--accent);stroke-opacity:.6" stroke-width="2">
+    <path d="M412 76 H426 M476 76 H490 M515 92 V112 M540 128 H554"/>
+  </g>
+  <g style="fill:var(--accent);fill-opacity:.12;stroke:var(--accent);stroke-opacity:.7" stroke-width="1.5">
+    <rect x="362" y="60" width="50" height="32" rx="7"/><rect x="426" y="60" width="50" height="32" rx="7"/>
+    <rect x="490" y="60" width="50" height="32" rx="7"/><rect x="490" y="112" width="50" height="32" rx="7"/>
+    <rect x="554" y="112" width="50" height="32" rx="7"/>
+  </g>
+  <rect x="478" y="100" width="74" height="56" rx="10" fill="none" style="stroke:var(--accent)" stroke-width="3"/>
+  <rect x="490" y="112" width="50" height="32" rx="7" style="fill:var(--accent);fill-opacity:.45"/>
+  <g style="fill:var(--text-muted)" font-size="12">
+    <text x="372" y="182">→ walks the path</text><text x="372" y="200">O zooms out to all</text>
+  </g>
+
+  <!-- 3. record: takes, the picked one, one video -->
+  <g font-size="13" text-anchor="middle">
+    <rect x="690" y="48" width="104" height="30" rx="8" fill="none" style="stroke:var(--text-muted);stroke-opacity:.6" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <text x="742" y="68" style="fill:var(--text-muted)">Take 1</text>
+    <rect x="690" y="90" width="104" height="30" rx="8" style="fill:var(--node-bg)"/>
+    <rect x="690" y="90" width="104" height="30" rx="8" style="fill:var(--accent);fill-opacity:.15;stroke:var(--accent)" stroke-width="2"/>
+    <text x="742" y="110" fill="currentColor">Take 2 ✓</text>
+  </g>
+  <path d="M796 105 C830 105 830 132 846 132" fill="none" style="stroke:var(--accent)" stroke-width="2.5" marker-end="url(#head)"/>
+  <rect x="822" y="138" width="104" height="66" rx="10" style="fill:var(--node-bg);stroke:var(--accent)" stroke-width="2"/>
+  <path d="M866 158 l18 13 -18 13z" style="fill:var(--accent)"/>
+  <circle cx="704" cy="182" r="7" style="fill:#ef4444"/>
+  <text x="718" y="187" font-size="12" style="fill:var(--text-muted)">every take kept</text>
+
+  <!-- the three promises -->
+  <g text-anchor="middle" fill="currentColor">
+    <text x="157" y="232" font-size="19" font-weight="700">Write</text>
+    <text x="157" y="258" font-size="14" style="fill:var(--text-muted)">in markdown, with AI</text>
+    <text x="480" y="232" font-size="19" font-weight="700">Present</text>
+    <text x="480" y="258" font-size="14" style="fill:var(--text-muted)">on a spatial canvas</text>
+    <text x="803" y="232" font-size="19" font-weight="700">Record</text>
+    <text x="803" y="258" font-size="14" style="fill:var(--text-muted)">without timeline editing</text>
+  </g>
+</svg>
+```
+
+One markdown file, from the first draft to the finished video.
+
 ## ⏱️ Hours, not days
 
 A video that takes two or three days to script, record and edit takes a couple of hours: an AI writes the deck, you record it slide by slide, and pick the best take of each in Studio. What comes out is ready to upload.

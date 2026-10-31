@@ -14,7 +14,9 @@ package can notice. Tests, CI and tooling do not belong here.
 
 ### Added
 
-- The home deck's second section, **AI writes it, you watch it**: the loop of an
+- The home deck opens with **Write, present, record**: the three promises
+  drawn as one SVG, right after the title.
+- The home deck's next section, **AI writes it, you watch it**: the loop of an
   AI agent, `deck.md`, `npx slidetake` and Chrome, drawn as an SVG in the
   deck's colours, with why it's fast (only content to write; diagrams and
   charts as text).
