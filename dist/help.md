@@ -305,11 +305,9 @@ YouTube is 16:9. If your screen isn't (a MacBook is 16:10, an ultrawide 21:9), a
 
 A dummy HDMI plug works on any system.
 
-### OBS on another computer
+### Connect from the address
 
-`?obs=host:port:password` in the address connects as the page opens.
-
-From https://slidetake.com, OBS must be on the same computer: browsers block secure pages from plain `ws://` addresses elsewhere. For OBS on another machine, use `npx slidetake`, which serves over http.
+`?obs=localhost:4455` (or `?obs=localhost:4455:password`) in the address connects to OBS as the page opens. OBS runs on the same computer as the deck.
 
 ### Add your camera
 

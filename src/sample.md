@@ -233,7 +233,7 @@ Three places, one deck format: a markdown file.
     <text x="526" y="80" font-size="13" style="fill:var(--text-muted)">write, open from a link, record in ● Studio, share</text>
     <rect x="504" y="118" width="430" height="84" rx="16" style="fill:var(--accent);fill-opacity:.06;stroke:var(--accent);stroke-opacity:.45" stroke-width="1.5"/>
     <text x="526" y="152" font-size="18" font-weight="600" fill="currentColor">Your computer · <tspan font-family="IBM Plex Mono, monospace" font-size="16">npx slidetake</tspan></text>
-    <text x="526" y="178" font-size="13" style="fill:var(--text-muted)">the AI loop, local images, saves to the file, OBS on another computer</text>
+    <text x="526" y="178" font-size="13" style="fill:var(--text-muted)">the AI loop, local images, edits saved to the file</text>
     <rect x="504" y="216" width="430" height="84" rx="16" style="fill:var(--accent);fill-opacity:.06;stroke:var(--accent);stroke-opacity:.45" stroke-width="1.5"/>
     <text x="526" y="250" font-size="18" font-weight="600" fill="currentColor">Your website · <tspan font-family="IBM Plex Mono, monospace" font-size="16">slidetake.js</tspan></text>
     <text x="526" y="276" font-size="13" style="fill:var(--text-muted)">a viewer for your readers, in your site's colours</text>

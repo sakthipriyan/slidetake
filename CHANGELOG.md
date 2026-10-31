@@ -18,10 +18,16 @@ package can notice. Tests, CI and tooling do not belong here.
   AI agent, `deck.md`, `npx slidetake` and Chrome, drawn as an SVG in the
   deck's colours, with why it's fast (only content to write; diagrams and
   charts as text).
-- Diagrams, drawn as SVG in the deck's colours, explain the flow: on the home
-  deck, takes becoming one video, and one deck in three places; the headings'
-  hierarchy is a Graphviz diagram, written in the deck; in the Docs, easy and pro mode side by side (the comparison
-  table moves to its own slide, Which mode?).
+- Diagrams explain the flow, in the deck's colours: on the home deck, takes
+  becoming one video and one deck in three places (SVG), and the headings'
+  hierarchy (Graphviz, written in the deck); in the Docs, easy and pro mode
+  side by side, with the comparison table on its own slide, Which mode?
+
+### Changed
+
+- Pro mode is for OBS on the same computer. The docs no longer describe OBS on
+  another computer, and the message for an address other than localhost says
+  to run OBS on this computer.
 
 ## [0.4.3] - 2026-10-31
 

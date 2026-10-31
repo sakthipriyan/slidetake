@@ -20,7 +20,7 @@ The built app is a single HTML file, [`dist/index.html`](dist/index.html): open 
 npx slidetake deck.md          # or a folder: its index.md, deck.md, slides.md or README.md
 ```
 
-Opens on `http://localhost:4300` (`--port` to change, `--open` to open the browser). Files next to the deck are served beside it, so `![](diagram.png)` works. Saving the file reloads the deck where you are; typing in the browser's editor saves to the file. Over plain http, so OBS on another machine works too. Node 20+.
+Opens on `http://localhost:4300` (`--port` to change, `--open` to open the browser). Files next to the deck are served beside it, so `![](diagram.png)` works. Saving the file reloads the deck where you are; typing in the browser's editor saves to the file. Node 20+.
 
 ## Examples
 
@@ -72,7 +72,7 @@ In Chrome, Edge and other Chromium browsers the deck records itself, nothing to 
 
 Recording is on slidetake.com and `npx slidetake`; decks embedded with `slidetake.js` are view-only.
 
-From https://slidetake.com, OBS must run on the same computer (`localhost`): browsers block secure pages from plain `ws://` connections to other machines. To record with OBS on another machine, use `npx slidetake`, which serves over http.
+OBS runs on the same computer as the deck (`localhost`).
 
 ## Decks
 

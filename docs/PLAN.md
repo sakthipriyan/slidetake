@@ -32,12 +32,12 @@ The **core** is shared: parsing (headings, `+++`, reveal.js), layouts, camera mo
 
 ### 3. Hosted Studio at slidetake.com
 - ✅ An assets-only Cloudflare Worker on slidetake.com; any path serves the app, so short links need no redirect rules.
-- ✅ `/gh/owner/repo[@ref]/path` and `/gist/<id>` short links, `?src=` for any URL; ⇣ Load turns pasted GitHub and gist page links into those; Share (never with `?obs=`); the landing deck; a clear message when https blocks OBS on another machine; favicon, link previews.
+- ✅ `/gh/owner/repo[@ref]/path` and `/gist/<id>` short links, `?src=` for any URL; ⇣ Load turns pasted GitHub and gist page links into those; Share (never with `?obs=`); the landing deck; favicon, link previews.
 - ✅ Released from a version tag only: the tag publishes to npm, then deploys the site with that release's app.
 
 ### 4. npm and `npx slidetake`
 - ✅ `npm i slidetake`: `dist/slidetake.js` (the embed) and `dist/index.html` (the whole app), published with provenance.
-- ✅ `npx slidetake deck.md` serves the deck's folder locally: local images, reload on save, edits saved to the file, OBS on another machine.
+- ✅ `npx slidetake deck.md` serves the deck's folder locally: local images, reload on save, edits saved to the file.
 
 ### 5. Polish (ongoing)
 - ✅ Docs, Features, Showcase and Privacy decks, `llms.txt` for AI tools, versioned releases with a changelog.
@@ -53,8 +53,7 @@ The **core** is shared: parsing (headings, `+++`, reveal.js), layouts, camera mo
 ## Recording from the hosted site
 
 - Easy mode needs nothing else: the deck records itself in Chrome, Edge and other Chromium browsers.
-- Pro mode with OBS on the same computer works from slidetake.com, since browsers let a secure page talk to `localhost`.
-- Pro mode with OBS on another machine: browsers block a secure (https) page from opening a plain `ws://` connection on the network, and OBS has no secure WebSocket of its own. Use `npx slidetake` (http, local) for that setup.
+- Pro mode: OBS on the same computer, reached at `localhost`; browsers let a secure page talk to it.
 
 ## Decks: read-only sources, one working copy
 
