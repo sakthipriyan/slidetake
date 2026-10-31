@@ -152,13 +152,13 @@ A video that takes two or three days to script, record and edit takes a couple o
 
 Ask your AI for a change, and see it on the slide you're on in seconds.
 
-### Fewer tokens, nothing to fix
-
-The AI writes only content: headings, text and a few comments. Slidetake does the rest: card sizes, the map, the camera moves. No CSS or layout code to generate, and none to repair.
-
 ### Real diagrams and charts, as text
 
 AI already writes **Graphviz**, **D2**, **ECharts** and **SVG** well, so they arrive in the same reply as the words, drawn in your deck's colours for dark and light, and changed by asking. The diagram before this slide is one: SVG inside the markdown.
+
+### Fewer tokens, nothing to fix
+
+The AI writes only content: headings, text and a few comments. Slidetake does the rest: card sizes, the map, the camera moves. No CSS or layout code to generate, and none to repair.
 
 ## ✂️ Record without timeline editing
 
