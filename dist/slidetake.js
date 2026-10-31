@@ -89,7 +89,7 @@ The AI writes only content: headings, text and a few comments. Slidetake does th
 
 ### Real diagrams and charts, as text
 
-AI already writes Graphviz, D2, ECharts and SVG well, so they arrive in the same reply as the words, drawn in your deck's colours for dark and light, and changed by asking. The diagram before this slide is one: SVG inside the markdown.
+AI already writes **Graphviz**, **D2**, **ECharts** and **SVG** well, so they arrive in the same reply as the words, drawn in your deck's colours for dark and light, and changed by asking. The diagram before this slide is one: SVG inside the markdown.
 
 ## \u2702\uFE0F Record without timeline editing
 
