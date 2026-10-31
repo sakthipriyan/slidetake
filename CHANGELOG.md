@@ -25,7 +25,6 @@ package can notice. Tests, CI and tooling do not belong here.
 
 - The no-JavaScript message no longer mentions the removed YouTube
   description.
-
 - On a site's page (read-only, no editor) the keys panel no longer lists
   **E** for the editor.
 
