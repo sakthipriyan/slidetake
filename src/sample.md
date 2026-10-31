@@ -81,7 +81,7 @@ pip: bottom-right
 </svg>
 ```
 
-For developers and technical educators who explain things on video. You're inside a Slidetake deck: press → to walk it, **O** for the map.
+For developers and technical educators who explain things on video. You're inside a Slidetake deck right now.
 
 ### ⏱️ Hours, not days
 
