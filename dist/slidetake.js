@@ -150,13 +150,11 @@ AI already writes **Graphviz**, **D2**, **ECharts** and **SVG** well, so they ar
 
 **Every slide is a take.** Stumbled? Press \u2190 and say it again: every attempt is kept, and recording carries on.
 
+**Pick the best of each** in \u25CF Studio: it joins them into one video in seconds, at YouTube's loudness, with the **chapters** to paste.
+
 ### Record right here, nothing to install
 
-Press **\u25CF Studio**, then **<span class="st-rec">\u25CF Record</span>**, and the deck records itself, in Chrome, Edge or another Chromium browser: your slides and camera in one 16:9 frame, at 1080p. Or let **[OBS Studio](https://obsproject.com)** record while the deck drives it, from any browser. No scenes to switch, no recording to watch.
-
-### Pick the best take
-
-Choose the best take of each slide in **\u25CF Studio**. It joins them into the final video in seconds (or writes the **[ffmpeg](https://ffmpeg.org)** cut for OBS), at YouTube's loudness, with the **chapters** to paste.
+Press **\u25CF Studio**, then **<span class="st-rec">\u25CF Record</span>**, and the deck records itself, in Chrome, Edge or another Chromium browser: your slides and camera in one 16:9 frame, at 1080p. Or let **[OBS Studio](https://obsproject.com)** record while the deck drives it, from any browser, and get the **[ffmpeg](https://ffmpeg.org)** cut. No scenes to switch, no recording to watch.
 
 ## \u{1F5FA}\uFE0F A map, not a stack
 
