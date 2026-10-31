@@ -148,7 +148,7 @@ AI already writes **Graphviz**, **D2**, **ECharts** and **SVG** well, so they ar
 </svg>
 \`\`\`
 
-**Every slide is a take.** Stumbled? Press \u2190 and say it again: every attempt is kept, and recording carries on. A fumbled line costs one press, not an editing session.
+**Every slide is a take.** Stumbled? Press \u2190 and say it again: every attempt is kept, and recording carries on.
 
 ### Record right here, nothing to install
 
