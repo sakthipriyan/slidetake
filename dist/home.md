@@ -9,12 +9,6 @@ pip: bottom-right
 
 # ![](/favicon.svg) Slide<span class="st-take">take</span>
 
-**Write in markdown, with AI. Present on a spatial canvas. Record without timeline editing.**
-
-Any AI writes the deck for you: it's plain markdown. For developers and technical educators who explain things on video. You're inside a Slidetake deck right now. Press → to walk it, **O** for the map.
-
-### ✨ Write, present, record
-
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" font-family="IBM Plex Sans, system-ui, sans-serif">
   <defs>
@@ -87,7 +81,7 @@ Any AI writes the deck for you: it's plain markdown. For developers and technica
 </svg>
 ```
 
-One markdown file, from the first draft to the finished video.
+For developers and technical educators who explain things on video. You're inside a Slidetake deck: press → to walk it, **O** for the map.
 
 ### ⏱️ Hours, not days
 
