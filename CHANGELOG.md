@@ -18,6 +18,10 @@ package can notice. Tests, CI and tooling do not belong here.
   AI agent, `deck.md`, `npx slidetake` and Chrome, drawn as an SVG in the
   deck's colours, with why it's fast (only content to write; diagrams and
   charts as text).
+- Diagrams, drawn as SVG in the deck's colours, explain the flow: on the home
+  deck, takes becoming one video, headings becoming the map, and one deck in
+  three places; in the Docs, easy and pro mode side by side (the comparison
+  table moves to its own slide, Which mode?).
 
 ## [0.4.3] - 2026-10-31
 

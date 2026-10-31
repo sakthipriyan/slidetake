@@ -200,7 +200,55 @@ With `duration: 10m` (or `90s`, `1h`, `12:30`), a lighter layer of the same colo
 
 ## 4️⃣ Record a video
 
-Two modes, both slide by slide, so there's no timeline to edit afterwards. **● Studio** (beside ✎ Editor, or **R**) opens **Slidetake Studio** in the mode you used last; ⚙ Setup switches between them:
+Two modes, both slide by slide, so there's no timeline to edit afterwards. **● Studio** (beside ✎ Editor, or **R**) opens **Slidetake Studio** in the mode you used last; ⚙ Setup switches between them.
+
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 330" font-family="IBM Plex Sans, system-ui, sans-serif">
+  <defs>
+    <marker id="head" viewBox="0 0 10 10" refX="8" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" style="fill:var(--accent)"/>
+    </marker>
+  </defs>
+
+  <!-- lanes -->
+  <rect x="10" y="20" width="940" height="140" rx="18" style="fill:var(--accent);fill-opacity:.04"/>
+  <rect x="10" y="176" width="940" height="140" rx="18" style="fill:var(--accent);fill-opacity:.04"/>
+  <text x="30" y="80" font-size="20" font-weight="700" style="fill:var(--accent)">Easy mode</text>
+  <text x="30" y="104" font-size="13" style="fill:var(--text-muted)">needs nothing</text>
+  <text x="30" y="122" font-size="13" style="fill:var(--text-muted)">to install</text>
+  <text x="30" y="236" font-size="20" font-weight="700" style="fill:var(--accent)">Pro mode</text>
+  <text x="30" y="260" font-size="13" style="fill:var(--text-muted)">needs OBS</text>
+  <text x="30" y="278" font-size="13" style="fill:var(--text-muted)">and ffmpeg</text>
+
+  <g font-size="15" font-weight="600" text-anchor="middle" fill="currentColor">
+    <rect x="180" y="50" width="150" height="80" rx="14" style="fill:var(--accent);fill-opacity:.06;stroke:var(--accent);stroke-opacity:.45" stroke-width="1.5"/>
+    <text x="255" y="84">Chrome or Edge</text>
+    <rect x="374" y="50" width="150" height="80" rx="14" style="fill:var(--accent);fill-opacity:.06;stroke:var(--accent);stroke-opacity:.45" stroke-width="1.5"/>
+    <text x="449" y="84">records the</text><text x="449" y="104">16:9 frame</text>
+    <rect x="568" y="50" width="150" height="80" rx="14" style="fill:var(--accent);fill-opacity:.06;stroke:var(--accent);stroke-opacity:.45" stroke-width="1.5"/>
+    <text x="643" y="84">takes kept</text><text x="643" y="104">in the browser</text>
+    <rect x="762" y="50" width="150" height="80" rx="14" style="fill:var(--node-bg)"/>
+    <rect x="762" y="50" width="150" height="80" rx="14" style="fill:var(--accent);fill-opacity:.12;stroke:var(--accent)" stroke-width="2"/>
+    <text x="837" y="84">↓ Download</text><text x="837" y="104" font-weight="400" font-size="13" style="fill:var(--text-muted)">one MP4</text>
+
+    <rect x="180" y="206" width="150" height="80" rx="14" style="fill:var(--accent);fill-opacity:.06;stroke:var(--accent);stroke-opacity:.45" stroke-width="1.5"/>
+    <text x="255" y="240">any browser</text><text x="255" y="260" font-weight="400" font-size="13" style="fill:var(--text-muted)">Safari, Firefox too</text>
+    <rect x="374" y="206" width="150" height="80" rx="14" style="fill:var(--accent);fill-opacity:.06;stroke:var(--accent);stroke-opacity:.45" stroke-width="1.5"/>
+    <text x="449" y="240">OBS records</text><text x="449" y="260">the screen</text>
+    <rect x="568" y="206" width="150" height="80" rx="14" style="fill:var(--accent);fill-opacity:.06;stroke:var(--accent);stroke-opacity:.45" stroke-width="1.5"/>
+    <text x="643" y="240">one recording,</text><text x="643" y="260">every take in it</text>
+    <rect x="762" y="206" width="150" height="80" rx="14" style="fill:var(--node-bg)"/>
+    <rect x="762" y="206" width="150" height="80" rx="14" style="fill:var(--accent);fill-opacity:.12;stroke:var(--accent)" stroke-width="2"/>
+    <text x="837" y="240">⧉ ffmpeg</text><text x="837" y="260" font-weight="400" font-size="13" style="fill:var(--text-muted)">the frame-exact cut</text>
+  </g>
+  <g fill="none" style="stroke:var(--accent)" stroke-width="2.5" marker-end="url(#head)">
+    <path d="M332 90 H372"/><path d="M526 90 H566"/><path d="M720 90 H760"/>
+    <path d="M332 246 H372"/><path d="M526 246 H566"/><path d="M720 246 H760"/>
+  </g>
+</svg>
+```
+
+### Which mode?
 
 | | Easy mode: in the browser | Pro mode: with OBS |
 |---|---|---|
