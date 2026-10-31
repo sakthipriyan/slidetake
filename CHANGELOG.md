@@ -12,6 +12,13 @@ package can notice. Tests, CI and tooling do not belong here.
 
 ## [Unreleased]
 
+### Added
+
+- The home deck's second section, **AI writes it, you watch it**: the loop of an
+  AI agent, `deck.md`, `npx slidetake` and Chrome, drawn as an SVG in the
+  deck's colours, with why it's fast (only content to write; diagrams and
+  charts as text).
+
 ## [0.4.3] - 2026-10-31
 
 ### Added
