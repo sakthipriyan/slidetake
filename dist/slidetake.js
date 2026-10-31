@@ -27,10 +27,6 @@ A video that takes two or three days to script, record and edit takes a couple o
       <stop offset="0" style="stop-color:var(--accent);stop-opacity:.35"/>
       <stop offset="1" style="stop-color:var(--accent);stop-opacity:1"/>
     </linearGradient>
-    <linearGradient id="hero" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" style="stop-color:var(--accent);stop-opacity:.28"/>
-      <stop offset="1" style="stop-color:var(--accent);stop-opacity:.06"/>
-    </linearGradient>
     <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
       <feGaussianBlur stdDeviation="9"/>
     </filter>
@@ -47,8 +43,9 @@ A video that takes two or three days to script, record and edit takes a couple o
     <text x="114" y="173" text-anchor="middle" font-size="13" style="fill:var(--text-muted)">or any AI agent</text>
   </g>
   <g>
-    <rect x="262" y="34" width="196" height="162" rx="18" style="fill:var(--accent)" filter="url(#glow)" opacity=".18"/>
-    <rect x="262" y="40" width="196" height="150" rx="18" style="fill:url(#hero);stroke:var(--accent)" stroke-width="2"/>
+    <rect x="262" y="34" width="196" height="162" rx="18" style="fill:var(--accent)" filter="url(#glow)" opacity=".1"/>
+    <rect x="262" y="40" width="196" height="150" rx="18" style="fill:var(--node-bg)"/>
+    <rect x="262" y="40" width="196" height="150" rx="18" style="fill:var(--accent);fill-opacity:.12;stroke:var(--accent)" stroke-width="2.5"/>
     <path d="M343 66 h26 l12 12 v34 h-38z" fill="none" style="stroke:var(--accent)" stroke-width="2.5" stroke-linejoin="round"/>
     <path d="M369 66 v12 h12" fill="none" style="stroke:var(--accent)" stroke-width="2.5" stroke-linejoin="round"/>
     <text x="360" y="150" text-anchor="middle" font-size="19" font-weight="600" font-family="IBM Plex Mono, monospace" fill="currentColor">deck.md</text>
