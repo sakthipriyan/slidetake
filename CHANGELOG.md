@@ -12,6 +12,29 @@ package can notice. Tests, CI and tooling do not belong here.
 
 ## [Unreleased]
 
+## [0.4.4] - 2026-10-31
+
+### Added
+
+- The home deck's title slide shows the whole flow as one SVG: write in markdown
+  with AI, present on a spatial canvas, record in Chrome or with OBS, and edit by
+  picking the best take.
+- The home deck's Write section: the loop of an AI agent, `deck.md`,
+  `npx slidetake` and Chrome, drawn as an SVG in the deck's colours, with why
+  it's fast (only content to write; diagrams and charts as text).
+- Diagrams explain the flow, in the deck's colours: on the home deck, takes
+  becoming one video and one deck in three places (SVG), and the headings'
+  hierarchy (Graphviz, written in the deck); in the Docs, easy and pro mode
+  side by side, with the comparison table on its own slide, Which mode?
+
+### Changed
+
+- The home deck and Features follow the four steps: Write, Present, Record and
+  Edit, then Run it anywhere. The Docs get a step of their own for Edit.
+- Pro mode is for OBS on the same computer. The docs no longer describe OBS on
+  another computer, and the message for an address other than localhost says
+  to run OBS on this computer.
+
 ## [0.4.3] - 2026-10-31
 
 ### Added

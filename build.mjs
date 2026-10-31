@@ -65,7 +65,9 @@ function withDeckText(page, md, path, name){
   const plain = para.replace(/<[^>]+>/g, '').replace(/\[([^\]]*)\]\([^)]*\)/g, '$1').replace(/[*_`]/g, '').replace(/\s+/g, ' ').trim();
   const own = ((front && front[1].match(/^description:\s*(.+)$/m)) || [, ''])[1].replace(/^["']|["']$/g, '');
   const description = own || (plain.length > 160 ? plain.slice(0, 157).replace(/\s+\S*$/, '') + '…' : plain);
-  const html = marked.parse(body.replace(/<!--[\s\S]*?-->/g, ''), {async: false});
+  // a ```svg drawing goes in as the drawing, not its source (Slidetake's own decks: trusted)
+  const text = body.replace(/<!--[\s\S]*?-->/g, '').replace(/^```svg\n([\s\S]*?)^```$/gm, (_, svg)=>svg.trim());
+  const html = marked.parse(text, {async: false});
   const url = 'https://slidetake.com' + path;
   const mdFile = name === 'index' ? '/home.md' : '/' + name + '.md';
   const head = '<link rel="canonical" href="' + url + '">\n<link rel="alternate" type="text/markdown" href="' + mdFile + '">';

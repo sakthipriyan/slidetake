@@ -1752,9 +1752,8 @@ function setObsStatus(text, kind, detail){
 // other address, and OBS has no secure WebSocket of its own. Say so instead of failing with a vague error.
 const isLoopback = host=>/^(localhost|127(\.\d+){3}|\[?::1\]?)$/i.test(host);
 function obsBlockedHere(host){ return location.protocol === 'https:' && !isLoopback(host); }
-const OBS_HTTPS_HELP = 'This page is served over https, and browsers block it from reaching OBS on another computer ' +
-  '(OBS only offers plain ws://). Run OBS on this computer and use localhost, or open Slidetake from a local copy: ' +
-  'download dist/index.html from github.com/slidetake/slidetake and serve it with python3 -m http.server.';
+const OBS_HTTPS_HELP = 'Run OBS on this computer and connect to localhost: a secure (https) page can\'t reach OBS ' +
+  'at any other address.';
 async function connectObs(){
   const host = obsHost.value.trim() || 'localhost';
   const url = 'ws://' + host + ':' + (obsPort.value.trim() || '4455');
