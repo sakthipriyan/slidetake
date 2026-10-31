@@ -14,7 +14,7 @@ pip: bottom-right
 
 Any AI writes the deck for you: it's plain markdown. For developers and technical educators who explain things on video. You're inside a Slidetake deck right now. Press \u2192 to walk it, **O** for the map.
 
-## \u2728 Write, present, record
+### \u2728 Write, present, record
 
 \`\`\`svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" font-family="IBM Plex Sans, system-ui, sans-serif">
@@ -90,7 +90,7 @@ Any AI writes the deck for you: it's plain markdown. For developers and technica
 
 One markdown file, from the first draft to the finished video.
 
-## \u23F1\uFE0F Hours, not days
+### \u23F1\uFE0F Hours, not days
 
 A video that takes two or three days to script, record and edit takes a couple of hours: an AI writes the deck, you record it slide by slide, and pick the best take of each in Studio. What comes out is ready to upload.
 
