@@ -12,6 +12,8 @@ package can notice. Tests, CI and tooling do not belong here.
 
 ## [Unreleased]
 
+## [0.4.4] - 2026-10-31
+
 ### Added
 
 - The home deck's title slide shows the whole flow as one SVG: write in markdown
@@ -27,8 +29,8 @@ package can notice. Tests, CI and tooling do not belong here.
 
 ### Changed
 
-- The home deck follows the four steps: Write, Present, Record and Edit, then
-  Run it anywhere and Open source.
+- The home deck and Features follow the four steps: Write, Present, Record and
+  Edit, then Run it anywhere. The Docs get a step of their own for Edit.
 - Pro mode is for OBS on the same computer. The docs no longer describe OBS on
   another computer, and the message for an address other than localhost says
   to run OBS on this computer.

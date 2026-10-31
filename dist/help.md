@@ -7,7 +7,7 @@ pip: none
 
 # ![](/favicon.svg) Slide<span class="st-take">take</span> Docs
 
-Everything in order: **get started → write → present → record → share**. Press → to walk it, ↓ ↑ to go into a step and back out, **O** for the map.
+Everything in order: **get started → write → present → record → edit → share**. Press → to walk it, ↓ ↑ to go into a step and back out, **O** for the map.
 
 ## 1️⃣ Get started
 
@@ -349,9 +349,9 @@ Words you can combine: `on`, `off`, `full`, a size like `30%`, a corner, `flip`,
 - **B** (or **.**, a clicker's blank-screen key) pauses and resumes
 - one press past the last step ends the take; **Esc** ends it early
 
-### Slidetake Studio
+## 5️⃣ Edit the video
 
-When the take ends you're back in Studio, the same in both modes:
+When the take ends you're back in **Slidetake Studio**, the same in both modes:
 
 - the player, with **● Record** and **▶ Preview** under it
 - every slide and its takes on the right: click one to preview it
@@ -384,7 +384,7 @@ In ⚙ Setup → Microphone:
 
 YouTube turns loud videos down but not quiet ones up, so without the boost your voice sounds quiet. With OBS, Volume boost adds `loudnorm` to the ffmpeg command.
 
-## 5️⃣ Share and keep
+## 6️⃣ Share and keep
 
 Every deck you open is **read-only**: Slidetake's own decks, templates, files on the web and shared links. Viewing one never changes anything.
 

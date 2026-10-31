@@ -98,7 +98,7 @@ window.SLIDETAKE = {
   recording: false                                    // optional: true brings back ● Studio, for your own preview
 };
 </script>
-<script src="https://cdn.jsdelivr.net/npm/slidetake@0.4.3/dist/slidetake.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slidetake@0.4.4/dist/slidetake.js"></script>
 ```
 
 `colors` takes any CSS colour per token, for both modes or under `light` / `dark`: `accent` (text and the current slide), `accentSoft` (smaller headings), `line` (borders and the active path), `ring` (the current slide's outline), `header` and `headerText` (a band of colour behind the header). A deck can also set its own with `accent:` in its top block.

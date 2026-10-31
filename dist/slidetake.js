@@ -1,4 +1,4 @@
-/* Slidetake 0.4.3 · https://slidetake.com · Apache-2.0 */
+/* Slidetake 0.4.4 · https://slidetake.com · Apache-2.0 */
 "use strict";(()=>{var G=(e,t)=>()=>(e&&(t=e(e=0)),t);var Qa,xr=G(()=>{Qa=`---
 title: Slidetake \u2014 write in markdown with AI, record without timeline editing
 description: "Write a deck in markdown, with AI, present it on a spatial canvas, and record it slide by slide: retake any slide, pick the best take, download the video. Open source."
@@ -374,7 +374,7 @@ pip: none
 
 # ![](/favicon.svg) Slide<span class="st-take">take</span> Docs
 
-Everything in order: **get started \u2192 write \u2192 present \u2192 record \u2192 share**. Press \u2192 to walk it, \u2193 \u2191 to go into a step and back out, **O** for the map.
+Everything in order: **get started \u2192 write \u2192 present \u2192 record \u2192 edit \u2192 share**. Press \u2192 to walk it, \u2193 \u2191 to go into a step and back out, **O** for the map.
 
 ## 1\uFE0F\u20E3 Get started
 
@@ -716,9 +716,9 @@ Words you can combine: \`on\`, \`off\`, \`full\`, a size like \`30%\`, a corner,
 - **B** (or **.**, a clicker's blank-screen key) pauses and resumes
 - one press past the last step ends the take; **Esc** ends it early
 
-### Slidetake Studio
+## 5\uFE0F\u20E3 Edit the video
 
-When the take ends you're back in Studio, the same in both modes:
+When the take ends you're back in **Slidetake Studio**, the same in both modes:
 
 - the player, with **\u25CF Record** and **\u25B6 Preview** under it
 - every slide and its takes on the right: click one to preview it
@@ -751,7 +751,7 @@ In \u2699 Setup \u2192 Microphone:
 
 YouTube turns loud videos down but not quiet ones up, so without the boost your voice sounds quiet. With OBS, Volume boost adds \`loudnorm\` to the ffmpeg command.
 
-## 5\uFE0F\u20E3 Share and keep
+## 6\uFE0F\u20E3 Share and keep
 
 Every deck you open is **read-only**: Slidetake's own decks, templates, files on the web and shared links. Viewing one never changes anything.
 
@@ -793,41 +793,19 @@ pip: none
 
 The complete list, one line each. Press \u2192 to walk it, **O** for the map.
 
-## \u2702\uFE0F Record without timeline editing
-
-Two modes, the same takes: **easy** in the browser, **pro** with OBS.
+## \u270D\uFE0F Write in markdown, with AI
 
 | Feature | Advantage |
 |---|---|
-| **Takes per slide** (\u2190) | every attempt kept; recording never stops |
-| **Pause and resume** (B) | step away without a gap to cut |
-| **Slidetake Studio** | every slide's takes, Preview and Chapters, the same in both modes |
-| **Volume boost** | your voice at YouTube's loudness (\u221214 LUFS), never clipped |
-| **YouTube chapters** | one click copies them, one per section |
-| **Clicker support** | any Bluetooth presenter remote moves the deck |
+| **The AI loop** (\`npx slidetake\`) | an agent writes the file; the slide you're on redraws on save |
+| **One file** | any editor, versioned in git, reviewed like code |
+| **Steps, diagrams, charts** | Graphviz, D2, SVG and ECharts as text |
+| **Image cards** | laid out by shape: beside text, across the card, galleries, carousels, grids |
+| **Full-screen cards** (\`view: full\`) | a 16:9 frame for a big image |
+| **YouTube** | plays on the next press, pauses when you leave |
+| **reveal.js and \`+++\` decks** | open as they are |
 
-### Easy mode: in the browser
-
-For Chrome, Edge or another Chromium browser, on a screen with enough pixels: 1920\xD71080 for 1080p (a Retina laptop has them), 1280\xD7720 for 720p.
-
-| Feature | Advantage |
-|---|---|
-| **Nothing to install** | the deck records itself in a 16:9 frame, on a screen of any shape |
-| **Retake any slide later** | tick slides and record just those; an edited slide's takes are marked outdated |
-| **Download** | the picked takes joined into one MP4 in seconds |
-| **Takes kept in the browser** | every take, from every recording, until you purge them |
-
-### Pro mode: with OBS
-
-For Safari, Firefox or any browser, a screen too small for easy mode, or whatever OBS can record.
-
-| Feature | Advantage |
-|---|---|
-| **[OBS](https://obsproject.com), driven by the deck** | it starts and stops for you; you only talk |
-| **16:9 check** | Setup warns before a video with bars; use a 16:9 screen, physical or virtual |
-| **Frame-exact [ffmpeg](https://ffmpeg.org) cut** | one command, no video editor |
-
-## \u{1F5FA}\uFE0F A map, not a stack
+## \u{1F5FA}\uFE0F Present on a spatial canvas
 
 | Feature | Advantage |
 |---|---|
@@ -838,7 +816,7 @@ For Safari, Firefox or any browser, a screen too small for easy mode, or whateve
 | **Short flights** | camera moves made to read well on video |
 | **Progress and timer** | a bar that fills, and a clock that tells you if you're behind |
 
-## \u{1F3A5} The camera is part of the deck
+### The camera is part of the deck
 
 | Feature | Advantage |
 |---|---|
@@ -848,18 +826,7 @@ For Safari, Firefox or any browser, a screen too small for easy mode, or whateve
 | **Camera layouts** (V) | try them live, without editing the deck |
 | **Off until you turn it on** | not shown to viewers: the slides get the whole screen |
 
-## \u270D\uFE0F Plain markdown in
-
-| Feature | Advantage |
-|---|---|
-| **One file** | any editor, versioned in git, reviewed like code |
-| **Steps, diagrams, charts** | Graphviz, D2, SVG and ECharts as text |
-| **Image cards** | laid out by shape: beside text, across the card, galleries, carousels, grids |
-| **Full-screen cards** (\`view: full\`) | a 16:9 frame for a big image |
-| **YouTube** | plays on the next press, pauses when you leave |
-| **reveal.js and \`+++\` decks** | open as they are |
-
-## \u{1F3A8} Your colours
+### Your colours
 
 | Feature | Advantage |
 |---|---|
@@ -867,6 +834,45 @@ For Safari, Firefox or any browser, a screen too small for easy mode, or whateve
 | **\`accent:\`** | one colour, shaded for both modes, charts and diagrams included |
 | **\`brand:\` and \`logo:\`** | your name on every frame |
 | **Site colours** | embedded decks wear your site's palette and header |
+
+## \u{1F534} Record slide by slide
+
+Two modes, the same takes: **easy** in the browser, **pro** with OBS.
+
+| Feature | Advantage |
+|---|---|
+| **Takes per slide** (\u2190) | every attempt kept; recording never stops |
+| **Pause and resume** (B) | step away without a gap to cut |
+| **Clicker support** | any Bluetooth presenter remote moves the deck |
+
+### Easy mode: in the browser
+
+For Chrome, Edge or another Chromium browser, on a screen with enough pixels: 1920\xD71080 for 1080p (a Retina laptop has them), 1280\xD7720 for 720p.
+
+| Feature | Advantage |
+|---|---|
+| **Nothing to install** | the deck records itself in a 16:9 frame, on a screen of any shape |
+| **Retake any slide later** | tick slides and record just those; an edited slide's takes are marked outdated |
+| **Takes kept in the browser** | every take, from every recording, until you purge them |
+
+### Pro mode: with OBS
+
+For Safari, Firefox or any browser, a screen too small for easy mode, or whatever OBS can record.
+
+| Feature | Advantage |
+|---|---|
+| **[OBS](https://obsproject.com), driven by the deck** | it starts and stops for you; you only talk |
+| **16:9 check** | Setup warns before a video with bars; use a 16:9 screen, physical or virtual |
+
+## \u2702\uFE0F Edit by picking the best take
+
+| Feature | Advantage |
+|---|---|
+| **Slidetake Studio** | every slide's takes, Preview and Chapters, the same in both modes |
+| **Download** (easy mode) | the picked takes joined into one MP4 in seconds |
+| **Frame-exact [ffmpeg](https://ffmpeg.org) cut** (pro mode) | one command, no video editor |
+| **Volume boost** | your voice at YouTube's loudness (\u221214 LUFS), never clipped |
+| **YouTube chapters** | one click copies them, one per section |
 
 ## \u{1F310} Run it anywhere
 
