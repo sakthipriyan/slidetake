@@ -93,7 +93,7 @@ pip: bottom-right
 </svg>
 ```
 
-For developers and technical educators who explain things on video. You're inside a Slidetake deck right now.
+<p style="text-align:center">For developers and technical educators who explain things on video. You're inside a Slidetake deck right now.</p>
 
 ### ⏱️ Hours, not days
 
