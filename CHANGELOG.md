@@ -18,6 +18,8 @@ package can notice. Tests, CI and tooling do not belong here.
   their deck as text, with their own title and description, so search engines
   and AI tools that don't run JavaScript read the real page. Without
   JavaScript the page shows it.
+- Docs → A prompt to copy: a short prompt that has any AI write a Slidetake
+  deck, following llms.txt.
 
 ### Fixed
 
