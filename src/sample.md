@@ -161,53 +161,19 @@ Choose the best take of each slide in **● Studio**. It joins them into the fin
 
 <!-- view: overview -->
 
-```svg
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" font-family="IBM Plex Sans, system-ui, sans-serif">
-  <defs>
-    <marker id="head" viewBox="0 0 10 10" refX="8" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse">
-      <path d="M0 0 L10 5 L0 10 z" style="fill:var(--accent)"/>
-    </marker>
-  </defs>
-
-  <!-- the markdown -->
-  <rect x="16" y="30" width="330" height="240" rx="16" style="fill:var(--accent);fill-opacity:.06;stroke:var(--accent);stroke-opacity:.45" stroke-width="1.5"/>
-  <text x="36" y="58" font-size="12" font-weight="600" letter-spacing="2" style="fill:var(--text-muted)">DECK.MD</text>
-  <g font-size="19" font-family="IBM Plex Mono, monospace" fill="currentColor">
-    <text x="40" y="100"><tspan style="fill:var(--accent)" font-weight="600">#</tspan> Talk</text>
-    <text x="40" y="140"><tspan style="fill:var(--accent)" font-weight="600">##</tspan> Why</text>
-    <text x="40" y="180"><tspan style="fill:var(--accent)" font-weight="600">###</tspan> Detail</text>
-    <text x="40" y="220"><tspan style="fill:var(--accent)" font-weight="600">##</tspan> How</text>
-    <text x="40" y="260"><tspan style="fill:var(--accent)" font-weight="600">##</tspan> Demo</text>
-  </g>
-
-  <path d="M356 150 H418" fill="none" style="stroke:var(--accent)" stroke-width="3" marker-end="url(#head)"/>
-  <text x="387" y="138" text-anchor="middle" font-size="12" style="fill:var(--text-muted)">becomes</text>
-
-  <!-- the map: each section a row, every move a step right or down -->
-  <g fill="none" style="stroke:var(--accent)" stroke-width="2.5" marker-end="url(#head)">
-    <path d="M552 72 H578"/><path d="M688 72 H714"/><path d="M769 96 V128"/><path d="M769 176 V208"/>
-  </g>
-  <g font-size="16" font-weight="600" text-anchor="middle" fill="currentColor">
-    <rect x="442" y="48" width="108" height="48" rx="12" style="fill:var(--node-bg)"/>
-    <rect x="442" y="48" width="108" height="48" rx="12" style="fill:var(--accent);fill-opacity:.12;stroke:var(--accent)" stroke-width="2"/>
-    <text x="496" y="78">Talk</text>
-    <rect x="580" y="48" width="106" height="48" rx="12" style="fill:var(--accent);fill-opacity:.06;stroke:var(--accent);stroke-opacity:.6" stroke-width="1.5"/>
-    <text x="633" y="78">Why</text>
-    <rect x="716" y="48" width="106" height="48" rx="12" style="fill:var(--accent);fill-opacity:.06;stroke:var(--accent);stroke-opacity:.6" stroke-width="1.5"/>
-    <text x="769" y="78">Detail</text>
-    <rect x="716" y="128" width="106" height="48" rx="12" style="fill:var(--accent);fill-opacity:.06;stroke:var(--accent);stroke-opacity:.6" stroke-width="1.5"/>
-    <text x="769" y="158">How</text>
-    <rect x="716" y="208" width="106" height="48" rx="12" style="fill:var(--accent);fill-opacity:.06;stroke:var(--accent);stroke-opacity:.6" stroke-width="1.5"/>
-    <text x="769" y="238">Demo</text>
-  </g>
-  <text x="840" y="150" font-size="13" style="fill:var(--text-muted)">each section</text>
-  <text x="840" y="168" font-size="13" style="fill:var(--text-muted)">a row; every</text>
-  <text x="840" y="186" font-size="13" style="fill:var(--text-muted)">move a step</text>
-  <text x="840" y="204" font-size="13" style="fill:var(--text-muted)">right or down</text>
-</svg>
+```dot
+digraph {
+  rankdir=LR  nodesep=0.25  ranksep=0.7
+  node [shape=box style=rounded margin="0.3,0.1" fontsize=16 fontname="IBM Plex Mono"]
+  edge [arrowsize=0.7]
+  talk [label="# Talk"]  why [label="## Why"]  how [label="## How"]
+  demo [label="## Demo"]  detail [label="### Detail"]
+  talk -> {why how demo}
+  why -> detail
+}
 ```
 
-Your headings are the layout: no slides to arrange. → always walks the same path, and **O** zooms out to the whole talk, as this slide just did.
+Your headings are the hierarchy: `#` is the first card, `##` branches from it, `###` goes a level deeper. Slidetake lays it out as a map you move through: → walks the path, and **O** zooms out to the whole talk, as this slide just did. The diagram is Graphviz, written as text in the deck.
 
 ## 🎥 The camera is part of the deck
 
