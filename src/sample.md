@@ -80,7 +80,7 @@ A video that takes two or three days to script, record and edit takes a couple o
 </svg>
 ```
 
-Claude Code (or any AI agent) writes `deck.md`, `npx slidetake deck.md` serves it, and Chrome redraws the slide you're on each time the file is saved. Ask for a change; see it in seconds.
+Ask your AI for a change, and see it on the slide you're on in seconds.
 
 ### Fewer tokens, nothing to fix
 
