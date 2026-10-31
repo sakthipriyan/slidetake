@@ -10,73 +10,85 @@ pip: bottom-right
 # ![](/favicon.svg) Slide<span class="st-take">take</span>
 
 ```svg
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" font-family="IBM Plex Sans, system-ui, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 290" font-family="IBM Plex Sans, system-ui, sans-serif">
   <defs>
     <marker id="head" viewBox="0 0 10 10" refX="8" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse">
       <path d="M0 0 L10 5 L0 10 z" style="fill:var(--accent)"/>
     </marker>
   </defs>
 
-  <!-- three panels -->
+  <!-- four panels -->
   <g style="fill:var(--accent);fill-opacity:.06;stroke:var(--accent);stroke-opacity:.45" stroke-width="1.5">
-    <rect x="12" y="12" width="290" height="276" rx="20"/>
-    <rect x="335" y="12" width="290" height="276" rx="20"/>
-    <rect x="658" y="12" width="290" height="276" rx="20"/>
+    <rect x="14" y="10" width="212" height="270" rx="18"/>
+    <rect x="254" y="10" width="212" height="270" rx="18"/>
+    <rect x="494" y="10" width="212" height="270" rx="18"/>
+    <rect x="734" y="10" width="212" height="270" rx="18"/>
   </g>
   <g fill="none" style="stroke:var(--accent)" stroke-width="2.5" marker-end="url(#head)">
-    <path d="M304 120 H331"/><path d="M627 120 H654"/>
+    <path d="M228 110 H251"/><path d="M468 110 H491"/><path d="M708 110 H731"/>
   </g>
 
-  <!-- 1. write: a markdown file, and the AI writing it -->
-  <rect x="97" y="40" width="128" height="150" rx="12" style="fill:var(--node-bg);stroke:var(--accent)" stroke-width="2"/>
-  <g font-family="IBM Plex Mono, monospace" font-size="14" font-weight="600" style="fill:var(--accent)">
-    <text x="111" y="68">#</text><text x="111" y="124">##</text>
+  <!-- write: a markdown file, and the AI writing it -->
+  <rect x="66" y="36" width="104" height="140" rx="11" style="fill:var(--node-bg);stroke:var(--accent)" stroke-width="2"/>
+  <g font-family="IBM Plex Mono, monospace" font-size="13" font-weight="600" style="fill:var(--accent)">
+    <text x="78" y="62">#</text><text x="78" y="112">##</text>
   </g>
   <g style="fill:var(--text-muted)" opacity=".55">
-    <rect x="127" y="58" width="66" height="10" rx="5" style="fill:currentColor"/>
-    <rect x="111" y="80" width="98" height="7" rx="3.5"/><rect x="111" y="94" width="74" height="7" rx="3.5"/>
-    <rect x="135" y="114" width="58" height="10" rx="5" style="fill:currentColor"/>
-    <rect x="111" y="136" width="98" height="7" rx="3.5"/><rect x="111" y="150" width="84" height="7" rx="3.5"/><rect x="111" y="164" width="62" height="7" rx="3.5"/>
+    <rect x="92" y="53" width="52" height="9" rx="4.5"/>
+    <rect x="78" y="74" width="80" height="6" rx="3"/><rect x="78" y="86" width="60" height="6" rx="3"/>
+    <rect x="100" y="103" width="46" height="9" rx="4.5"/>
+    <rect x="78" y="124" width="80" height="6" rx="3"/><rect x="78" y="136" width="68" height="6" rx="3"/><rect x="78" y="148" width="50" height="6" rx="3"/>
   </g>
-  <path d="M232 34 l6 14 14 6 -14 6 -6 14 -6 -14 -14 -6 14 -6z" style="fill:var(--accent)"/>
+  <path d="M176 28 l6 14 14 6 -14 6 -6 14 -6 -14 -14 -6 14 -6z" style="fill:var(--accent)"/>
 
-  <!-- 2. present: cards on a path, the one on screen framed -->
+  <!-- present: cards on a path, the one on screen framed -->
   <g fill="none" style="stroke:var(--accent);stroke-opacity:.6" stroke-width="2">
-    <path d="M412 76 H426 M476 76 H490 M515 92 V112 M540 128 H554"/>
+    <path d="M310 58 H320 M358 58 H368 M387 71 V92 M406 105 H416"/>
   </g>
   <g style="fill:var(--accent);fill-opacity:.12;stroke:var(--accent);stroke-opacity:.7" stroke-width="1.5">
-    <rect x="362" y="60" width="50" height="32" rx="7"/><rect x="426" y="60" width="50" height="32" rx="7"/>
-    <rect x="490" y="60" width="50" height="32" rx="7"/><rect x="490" y="112" width="50" height="32" rx="7"/>
-    <rect x="554" y="112" width="50" height="32" rx="7"/>
+    <rect x="272" y="45" width="38" height="26" rx="6"/><rect x="320" y="45" width="38" height="26" rx="6"/>
+    <rect x="368" y="45" width="38" height="26" rx="6"/><rect x="368" y="92" width="38" height="26" rx="6"/>
+    <rect x="416" y="92" width="38" height="26" rx="6"/>
   </g>
-  <rect x="478" y="100" width="74" height="56" rx="10" fill="none" style="stroke:var(--accent)" stroke-width="3"/>
-  <rect x="490" y="112" width="50" height="32" rx="7" style="fill:var(--accent);fill-opacity:.45"/>
+  <rect x="358" y="82" width="58" height="46" rx="9" fill="none" style="stroke:var(--accent)" stroke-width="3"/>
+  <rect x="368" y="92" width="38" height="26" rx="6" style="fill:var(--accent);fill-opacity:.45"/>
   <g style="fill:var(--text-muted)" font-size="12">
-    <text x="372" y="182">→ walks the path</text><text x="372" y="200">O zooms out to all</text>
+    <text x="272" y="156">→ walks the path</text><text x="272" y="174">O zooms out to all</text>
   </g>
 
-  <!-- 3. record: takes, the picked one, one video -->
+  <!-- record: the red dot, in either mode -->
+  <circle cx="600" cy="62" r="24" fill="none" stroke="#ef4444" stroke-opacity=".45" stroke-width="2"/>
+  <circle cx="600" cy="62" r="14" fill="#ef4444"/>
   <g font-size="13" text-anchor="middle">
-    <rect x="690" y="48" width="104" height="30" rx="8" fill="none" style="stroke:var(--text-muted);stroke-opacity:.6" stroke-width="1.5" stroke-dasharray="4 4"/>
-    <text x="742" y="68" style="fill:var(--text-muted)">Take 1</text>
-    <rect x="690" y="90" width="104" height="30" rx="8" style="fill:var(--node-bg)"/>
-    <rect x="690" y="90" width="104" height="30" rx="8" style="fill:var(--accent);fill-opacity:.15;stroke:var(--accent)" stroke-width="2"/>
-    <text x="742" y="110" fill="currentColor">Take 2 ✓</text>
+    <rect x="522" y="102" width="156" height="30" rx="15" style="fill:var(--node-bg)"/>
+    <rect x="522" y="102" width="156" height="30" rx="15" style="fill:var(--accent);fill-opacity:.12;stroke:var(--accent)" stroke-width="1.5"/>
+    <text x="600" y="122" fill="currentColor"><tspan font-weight="600">Easy</tspan> · Chrome</text>
+    <rect x="522" y="142" width="156" height="30" rx="15" style="fill:var(--accent);fill-opacity:.06;stroke:var(--accent);stroke-opacity:.6" stroke-width="1.5"/>
+    <text x="600" y="162" fill="currentColor"><tspan font-weight="600">Pro</tspan> · OBS</text>
   </g>
-  <path d="M796 105 C830 105 830 132 846 132" fill="none" style="stroke:var(--accent)" stroke-width="2.5" marker-end="url(#head)"/>
-  <rect x="822" y="138" width="104" height="66" rx="10" style="fill:var(--node-bg);stroke:var(--accent)" stroke-width="2"/>
-  <path d="M866 158 l18 13 -18 13z" style="fill:var(--accent)"/>
-  <circle cx="704" cy="182" r="7" style="fill:#ef4444"/>
-  <text x="718" y="187" font-size="12" style="fill:var(--text-muted)">every take kept</text>
 
-  <!-- the three promises -->
+  <!-- edit: pick a take, get the video -->
+  <g font-size="12" text-anchor="middle">
+    <rect x="752" y="36" width="96" height="27" rx="8" fill="none" style="stroke:var(--text-muted);stroke-opacity:.6" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <text x="800" y="54" style="fill:var(--text-muted)">Take 1</text>
+    <rect x="752" y="72" width="96" height="27" rx="8" style="fill:var(--node-bg)"/>
+    <rect x="752" y="72" width="96" height="27" rx="8" style="fill:var(--accent);fill-opacity:.15;stroke:var(--accent)" stroke-width="2"/>
+    <text x="800" y="90" fill="currentColor">Take 2 ✓</text>
+  </g>
+  <path d="M850 86 C878 86 884 96 884 108" fill="none" style="stroke:var(--accent)" stroke-width="2.5" marker-end="url(#head)"/>
+  <rect x="836" y="112" width="92" height="60" rx="10" style="fill:var(--node-bg);stroke:var(--accent)" stroke-width="2"/>
+  <path d="M874 130 l16 12 -16 12z" style="fill:var(--accent)"/>
+
+  <!-- the steps -->
   <g text-anchor="middle" fill="currentColor">
-    <text x="157" y="232" font-size="19" font-weight="700">Write</text>
-    <text x="157" y="258" font-size="14" style="fill:var(--text-muted)">in markdown, with AI</text>
-    <text x="480" y="232" font-size="19" font-weight="700">Present</text>
-    <text x="480" y="258" font-size="14" style="fill:var(--text-muted)">on a spatial canvas</text>
-    <text x="803" y="232" font-size="19" font-weight="700">Record</text>
-    <text x="803" y="258" font-size="14" style="fill:var(--text-muted)">without timeline editing</text>
+    <text x="120" y="222" font-size="20" font-weight="700">Write</text>
+    <text x="120" y="248" font-size="14" style="fill:var(--text-muted)">in markdown, with AI</text>
+    <text x="360" y="222" font-size="20" font-weight="700">Present</text>
+    <text x="360" y="248" font-size="14" style="fill:var(--text-muted)">on a spatial canvas</text>
+    <text x="600" y="222" font-size="20" font-weight="700">Record</text>
+    <text x="600" y="248" font-size="14" style="fill:var(--text-muted)">slide by slide, retake any</text>
+    <text x="840" y="222" font-size="20" font-weight="700">Edit</text>
+    <text x="840" y="248" font-size="14" style="fill:var(--text-muted)">just pick the best take</text>
   </g>
 </svg>
 ```

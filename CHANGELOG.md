@@ -14,9 +14,9 @@ package can notice. Tests, CI and tooling do not belong here.
 
 ### Added
 
-- The home deck's title slide shows the three promises as one SVG: write in
-  markdown with AI, present on a spatial canvas, record without timeline
-  editing.
+- The home deck's title slide shows the whole flow as one SVG: write in markdown
+  with AI, present on a spatial canvas, record in Chrome or with OBS, and edit by
+  picking the best take.
 - The home deck's next section, **AI writes it, you watch it**: the loop of an
   AI agent, `deck.md`, `npx slidetake` and Chrome, drawn as an SVG in the
   deck's colours, with why it's fast (only content to write; diagrams and
