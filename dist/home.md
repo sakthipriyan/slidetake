@@ -99,7 +99,7 @@ pip: bottom-right
 
 A video that takes two or three days to script, record and edit takes a couple of hours: an AI writes the deck, you record it slide by slide, and pick the best take of each in Studio. What comes out is ready to upload.
 
-## 🤖 AI writes it, you watch it {#ai}
+## ✍️ Write in markdown, with AI {#ai}
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 380" font-family="IBM Plex Sans, system-ui, sans-serif">
@@ -166,13 +166,82 @@ Ask your AI for a change, and see it on the slide you're on in seconds.
 
 ### Real diagrams and charts, as text
 
-AI already writes **Graphviz**, **D2**, **ECharts** and **SVG** well, so they arrive in the same reply as the words, drawn in your deck's colours for dark and light, and changed by asking. The diagram before this slide is one: SVG inside the markdown.
+AI already writes **Graphviz**, **D2**, **ECharts** and **SVG** well, so they arrive in the same reply as the words, drawn in your deck's colours for dark and light, and changed by asking. The diagram before this slide is one: SVG inside the markdown. Headings, lists, tables, code, steps, images and YouTube links too: [see them all in the showcase →](/showcase)
 
 ### Fewer tokens, nothing to fix
 
 The AI writes only content: headings, text and a few comments. Slidetake does the rest: card sizes, the map, the camera moves. No CSS or layout code to generate, and none to repair.
 
-## ✂️ Record without timeline editing
+### A few comments do the rest
+
+Markdown has no word for "reveal one at a time" or "move the camera", so a handful of HTML comments say it. They stay invisible anywhere else markdown is read:
+
+```md
+<!-- steps -->            ← one press each
+<!-- camera: full, on --> ← move the camera
+<!-- view: overview -->   ← the map first
+<!-- view: full -->       ← a big image
+```
+
+## 🗺️ Present on a spatial canvas
+
+<!-- view: overview -->
+
+```dot
+digraph {
+  rankdir=LR  nodesep=0.25  ranksep=0.7
+  node [shape=box style=rounded margin="0.3,0.1" fontsize=16 fontname="IBM Plex Mono"]
+  edge [arrowsize=0.7]
+  talk [label="# Talk"]  why [label="## Why"]  how [label="## How"]
+  demo [label="## Demo"]  detail [label="### Detail"]
+  talk -> {why how demo}
+  why -> detail
+}
+```
+
+Your headings are the hierarchy: `#` is the first card, `##` branches from it, `###` goes a level deeper. Slidetake lays it out as a map you move through: → walks the path, and **O** zooms out to the whole talk, as this slide just did. The diagram is Graphviz, written as text in the deck.
+
+### The camera is part of the deck
+
+<!-- camera: on, full, on -->
+
+A comment in a slide moves you: corner, full screen, or off. Turn on **Camera** and watch this slide do it.
+
+### Your colours
+
+One line, `accent: "#3b82f6"`, gives a deck its own colour, shaded for dark and light. On your website, decks wear your site's palette.
+
+`brand:` and `logo:` put your name and logo in the corner of every slide, so every frame of the video carries them.
+
+## 🔴 Record slide by slide
+
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 190" font-family="IBM Plex Sans, system-ui, sans-serif">
+  <!-- easy mode -->
+  <rect x="14" y="10" width="452" height="170" rx="18" style="fill:var(--accent);fill-opacity:.1;stroke:var(--accent)" stroke-width="2"/>
+  <rect x="38" y="52" width="92" height="68" rx="9" fill="none" style="stroke:var(--accent)" stroke-width="2.5"/>
+  <path d="M38 70 H130" style="stroke:var(--accent)" stroke-width="2.5"/>
+  <circle cx="48" cy="61" r="2.2" style="fill:var(--accent)"/><circle cx="57" cy="61" r="2.2" style="fill:var(--accent)"/>
+  <circle cx="84" cy="95" r="10" fill="#ef4444"/>
+  <text x="156" y="58" font-size="21" font-weight="700" style="fill:var(--accent)">Easy mode</text>
+  <text x="156" y="88" font-size="15" fill="currentColor">Chrome or Edge, nothing to install</text>
+  <text x="156" y="114" font-size="15" fill="currentColor">The deck records itself: slides and</text>
+  <text x="156" y="136" font-size="15" fill="currentColor">camera in one 16:9 frame, at 1080p</text>
+
+  <!-- pro mode -->
+  <rect x="494" y="10" width="452" height="170" rx="18" style="fill:var(--accent);fill-opacity:.06;stroke:var(--accent);stroke-opacity:.5" stroke-width="1.5"/>
+  <circle cx="564" cy="86" r="36" fill="none" style="stroke:var(--accent)" stroke-width="2.5"/>
+  <circle cx="564" cy="86" r="10" fill="#ef4444"/>
+  <text x="626" y="58" font-size="21" font-weight="700" style="fill:var(--accent)">Pro mode</text>
+  <text x="626" y="88" font-size="15" fill="currentColor">OBS Studio, from any browser</text>
+  <text x="626" y="114" font-size="15" fill="currentColor">The deck starts and stops it, and</text>
+  <text x="626" y="136" font-size="15" fill="currentColor">drives every slide: you only talk</text>
+</svg>
+```
+
+Press **● Studio**, then **<span class="st-rec">● Record</span>**. **Every slide is a take:** stumbled? Press ← and say it again. Every attempt is kept, and recording carries on.
+
+## ✂️ Edit by picking the best take
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" font-family="IBM Plex Sans, system-ui, sans-serif">
@@ -229,58 +298,7 @@ The AI writes only content: headings, text and a few comments. Slidetake does th
 </svg>
 ```
 
-**Every slide is a take.** Stumbled? Press ← and say it again: every attempt is kept, and recording carries on.
-
-**Pick the best of each** in ● Studio: it joins them into one video in seconds, at YouTube's loudness, with the **chapters** to paste.
-
-### Record right here, nothing to install
-
-Press **● Studio**, then **<span class="st-rec">● Record</span>**, and the deck records itself, in Chrome, Edge or another Chromium browser: your slides and camera in one 16:9 frame, at 1080p. Or let **[OBS Studio](https://obsproject.com)** record while the deck drives it, from any browser, and get the **[ffmpeg](https://ffmpeg.org)** cut. No scenes to switch, no recording to watch.
-
-## 🗺️ A map, not a stack
-
-<!-- view: overview -->
-
-```dot
-digraph {
-  rankdir=LR  nodesep=0.25  ranksep=0.7
-  node [shape=box style=rounded margin="0.3,0.1" fontsize=16 fontname="IBM Plex Mono"]
-  edge [arrowsize=0.7]
-  talk [label="# Talk"]  why [label="## Why"]  how [label="## How"]
-  demo [label="## Demo"]  detail [label="### Detail"]
-  talk -> {why how demo}
-  why -> detail
-}
-```
-
-Your headings are the hierarchy: `#` is the first card, `##` branches from it, `###` goes a level deeper. Slidetake lays it out as a map you move through: → walks the path, and **O** zooms out to the whole talk, as this slide just did. The diagram is Graphviz, written as text in the deck.
-
-## 🎥 The camera is part of the deck
-
-<!-- camera: on, full, on -->
-
-A comment in a slide moves you: corner, full screen, or off. Turn on **Camera** and watch this slide do it.
-
-## ✍️ Plain markdown in
-
-Markdown you already know: headings, lists, tables, code, steps, diagrams (Graphviz, D2, SVG), charts, images and YouTube links. [See them all in the showcase →](/showcase)
-
-### A few comments do the rest
-
-Markdown has no word for "reveal one at a time" or "move the camera", so a handful of HTML comments say it. They stay invisible anywhere else markdown is read:
-
-```md
-<!-- steps -->            ← one press each
-<!-- camera: full, on --> ← move the camera
-<!-- view: overview -->   ← the map first
-<!-- view: full -->       ← a big image
-```
-
-## 🎨 Your colours
-
-One line, `accent: "#3b82f6"`, gives a deck its own colour, shaded for dark and light. On your website, decks wear your site's palette.
-
-`brand:` and `logo:` put your name and logo in the corner of every slide, so every frame of the video carries them.
+**Pick the best of each** in ● Studio: one video in seconds, at YouTube's loudness, with **chapters** to paste. With OBS, an **[ffmpeg](https://ffmpeg.org)** cut.
 
 ## 🌐 Run it anywhere
 
