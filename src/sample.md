@@ -341,7 +341,7 @@ Three places, one deck format: a markdown file.
 </svg>
 ```
 
-### slidetake.com: write, record, share
+### slidetake.com: write, present, record, edit and share
 
 Write a deck in the **✎ Editor**, or view one straight from a link: a GitHub file, a gist or any markdown URL. Record it and cut the video in **● Studio**, in the same tab. **Share** a link with the deck inside it. Nothing to install.
 
