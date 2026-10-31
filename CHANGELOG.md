@@ -12,6 +12,8 @@ package can notice. Tests, CI and tooling do not belong here.
 
 ## [Unreleased]
 
+## [0.4.3] - 2026-10-31
+
 ### Added
 
 - slidetake.com's own pages (home, Features, Showcase, Docs, Privacy) carry

@@ -1,4 +1,4 @@
-/* Slidetake 0.4.2 · https://slidetake.com · Apache-2.0 */
+/* Slidetake 0.4.3 · https://slidetake.com · Apache-2.0 */
 "use strict";(()=>{var G=(e,t)=>()=>(e&&(t=e(e=0)),t);var Qa,xn=G(()=>{Qa=`---
 title: Slidetake \u2014 write in markdown with AI, record without timeline editing
 description: "Write a deck in markdown, with AI, present it on a spatial canvas, and record it slide by slide: retake any slide, pick the best take, download the video. Open source."
